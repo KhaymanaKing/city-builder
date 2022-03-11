@@ -1,20 +1,20 @@
 
 body {
     /* feel free to update these css variables for a quick theme */
-    
+/*     
     --color1: white;
     --color2: white;
     --color3: white;
     --color4: white;
-    --color5: white;
+    --color5: white; */
     
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
         
-    /* --color1: hsla(349, 69%, 76%, 1);
+    --color1: hsla(349, 69%, 76%, 1);
     --color2: hsla(207, 67%, 44%, 1);
     --color3: hsla(200, 61%, 56%, 1);
     --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
+    --color5: hsla(170, 28%, 95%, 1);
 
     /* --color1: hsla(45, 86%, 83%, 1);
     --color2: hsla(135, 65%, 98%, 1);
@@ -78,7 +78,18 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
+main {
+    display: flex;
+    background-color: white;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 footer {
     position: fixed;
     width: 100%;
@@ -88,4 +99,24 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+.middle, .right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
+.left{
+    display: grid;
+    justify-content: left;
+    align-items: left;
+}
+.left img{
+    height: 400px;
+    width:  500px;
+    display: grid;
+    justify-content: left;
+    align-items: left;
 }
