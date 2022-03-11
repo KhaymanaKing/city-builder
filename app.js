@@ -44,11 +44,8 @@ treehouseDropDown.addEventListener('change', () => {
 });
 
 sloganButtonEl.addEventListener('click', ()=>{
-    
     const newSlogan = sloganInputEl.value;
-
-    sloganEl.push(newSlogan);
-    
+    slogans.push(newSlogan);
     displaySlogan();
     sloganInputEl.value = '';
 });
@@ -63,11 +60,10 @@ function displaySlogan() {
     sloganEl.textContent = '';
         
     for (let slogan of slogans) {
-        
         const pTag = document.createElement('p');
     
         pTag.textContent = slogan;
-        pTag.classList.add('sloganList');
+        pTag.classList.add(`list-of-Slogans`);
         
         sloganEl.append(pTag);
         
