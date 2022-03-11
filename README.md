@@ -52,3 +52,13 @@ Additional considerations:
 | :----------------------------------------------------------------------------------- | ----------: |
 | IMPURE: `displayCountStats() : attaches a string to the DOM describing how many times each dropdown has been changed` | 3 |
 | IMPURE: `displaySlogans() : clears DOM, loops through slogans, displays slogans on the page` | 3 |
+
+
+
+
+To do 
+1) add displayStats function to App.js
+2)Fix disSlogans function to App.js which means adding stats DOM
+3) Clean up CSS make the site look pretty. 
+
+

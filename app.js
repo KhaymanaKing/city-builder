@@ -6,6 +6,7 @@ const treehouseDropDown = document.getElementById('treehouse-dropdown');
 const lakeEl  = document.getElementById('lake-image');
 const forestEl  = document.getElementById('forest-image');
 const treehouseEl  = document.getElementById('treehouse-image');
+// need to add Stats dom for tracking everything that I do 
 
 const sloganEl = document.getElementById('slogans');
 const sloganInputEl = document.getElementById('slogans-input');
@@ -48,15 +49,24 @@ sloganButtonEl.addEventListener('click', () =>{
     sloganInputEl.value = '';
 });
   // get user input
+
+  //need to fix displaySlogan function so it actually works. I think my syntax may be wrong? 
+
+
 function displaySlogan(){
     sloganEl.textContent = '';
     for (let slogan of slogans){
 
         const pTag = document.createElement('p');
+        
+        pTag.classList.add('slogans');
         pTag.textContent = slogan;
-        pTag.classList.add('sloganList');
         sloganEl.append(pTag); 
+        console.log(sloganEl);
     }
 }
-  // use user input to update state 
-  // update DOM to reflect the new state
+
+//need to add displaySlogan function for everytime I change my dropdown it counts 
+function displaystat(){
+  slo
+}
